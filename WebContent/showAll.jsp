@@ -26,5 +26,16 @@ for(int i=0; i<all.length; i++){ %>
 <br>
 <% }
 %>
+
+<form action="read.jsp" enctype="UTF-8" method="get">
+<p><input type="submit" value="add" ></p>
+</form>
+<form action="delete.jsp" enctype="UTF-8" method="get">
+<p><input type="submit" value="delete" ></p>
+</form>
+<form action="update.jsp" enctype="UTF-8" method="get">
+<p><input type="submit" value="update" ></p>
+</form>
+
 </body>
 </html>

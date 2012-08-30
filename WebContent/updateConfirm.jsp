@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=Shift_JIS"
     pageEncoding="Shift_JIS"%>
-    <%@ page import="me.kukkii.roster.Roster" %>
-   <%@ page import="me.kukkii.roster.Player" %>
+                <%@ page import="me.kukkii.roster.Roster" %>
+            <%@ page import="me.kukkii.roster.Player" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -23,7 +23,8 @@ Player player = new Player(first, last, number, position, battingAverage, hometo
 Roster.getRoster().addPlayer(last, player);
 
 %>
-<p>registered</p>
+
+<h1>updated</h1>
 
 <br>
 
