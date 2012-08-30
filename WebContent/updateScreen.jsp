@@ -17,17 +17,17 @@ Player player = Roster.getRoster().lookUpPlayer(last);
 %>
 
 <form action="updateConfirm.jsp" enctype="UTF-8" method="get">
-<p><label>first <input type="text" name="first" value="<% player.getFirst()%>"></label></p>
-<p><label>last <input type="text" name="last" value="<% player.getLast()%>" ></label></p>
-<p><label>number <input type="text" name="number" value="<% player.getNumber()%>" ></label></p>
-<p><label>position <input type="text" name="position" value="<%player.getPosition()%>" ></label></p>
-<p><label>batting average <input type="text" name="battingAverage" value="<%player.getBattingAverage()%>"></label></p>
-<p><label>hometown <input type="text" name="hometown" value="<%player.getHomeTown()%>" ></label></p>
-<p><label>highschool <input type="text" name="highSchool" value="<%player.getHighSchool()%>" ></label></p>
+<p><label>first <input type="text" name="first" value="<%=player.getFirstName()%>"></label></p>
+<p><label>last <input type="text" name="last" value="<%=player.getLastName()%>" ></label></p>
+<p><label>number <input type="text" name="number" value="<%=player.getNumber()%>" ></label></p>
+<p><label>position <input type="text" name="position" value="<%=player.getPosition()%>" ></label></p>
+<p><label>batting average <input type="text" name="battingAverage" value="<%=player.getBattingAverage()%>"></label></p>
+<p><label>hometown <input type="text" name="hometown" value="<%=player.getHomeTown()%>" ></label></p>
+<p><label>highschool <input type="text" name="highSchool" value="<%=player.getHighSchool()%>" ></label></p>
 <p><input type="submit" value="update player" ></p>
 </form>
 
-<% Roster.getRoster().deletePlayer(player); %>
+<% Roster.getRoster().deletePlayer(last); %>
 
 </body>
 </html>
