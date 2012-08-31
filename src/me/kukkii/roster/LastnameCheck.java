@@ -28,6 +28,7 @@ public class LastnameCheck extends HttpServlet {
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
       String last = request.getParameter("last");
       Player player = Roster.getRoster().lookUpPlayer(last);
+      request.setAttribute("player", player);
       
       if(player == null){
         ServletContext sc = getServletContext();

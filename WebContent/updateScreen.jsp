@@ -14,9 +14,9 @@
 <body>
 
 <% 
-String last = request.getParameter("last");
-Player player = Roster.getRoster().lookUpPlayer(last);
-
+//String last = request.getParameter("last");
+//Player player = Roster.getRoster().lookUpPlayer(last);
+Player player = (Player)request.getAttribute("player");
 %>
 
 <form action="UpdateServlet" enctype="UTF-8" method="get">
