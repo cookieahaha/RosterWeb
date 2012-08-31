@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form action="add" enctype="UTF-8" method="get">
+<form action="Control" enctype="UTF-8" method="get">
 <p><label>first <input type="text" name="first" value="" ></label></p>
 <p><label>last <input type="text" name="last" value="" ></label></p>
 <p><label>number <input type="text" name="number" value="" ></label></p>
@@ -17,6 +17,9 @@
 <p><label>hometown <input type="text" name="hometown" value="" ></label></p>
 <p><label>highschool <input type="text" name="highSchool" value="" ></label></p>
 <p><input type="submit" value="add player" ></p>
+
+<p><input type="hidden" name="action" value="read" ></p>
+
 </form>
 
 
