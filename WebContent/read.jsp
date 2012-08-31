@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form action="add.jsp" enctype="UTF-8" method="get">
+<form action="add" enctype="UTF-8" method="get">
 <p><label>first <input type="text" name="first" value="" ></label></p>
 <p><label>last <input type="text" name="last" value="" ></label></p>
 <p><label>number <input type="text" name="number" value="" ></label></p>

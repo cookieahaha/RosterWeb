@@ -9,13 +9,9 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%      String last = request.getParameter("last"); %>
 
-<%
-String last = request.getParameter("last");
-Roster.getRoster().deletePlayer(last);
-
-%>
-<h1>deleted!</h1>
+<h1><%=last%> was deleted!</h1>
 
 <br>
 

@@ -13,17 +13,9 @@
 <%
 String first = request.getParameter("first");
 String last = request.getParameter("last");
-String number = request.getParameter("number");
-String position = request.getParameter("position");
-double battingAverage = Double.parseDouble(request.getParameter("battingAverage"));
-String hometown = request.getParameter("hometown");
-String highSchool = request.getParameter("highSchool");
-
-Player player = new Player(first, last, number, position, battingAverage, hometown, highSchool);
-Roster.getRoster().addPlayer(last, player);
-
 %>
-<p>registered</p>
+
+<p><%=first + " " + last + " was"%> registered</p>
 
 <br>
 

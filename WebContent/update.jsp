@@ -10,7 +10,7 @@
 
 <h1>enter the lastname of who u want to update</h1>
 
-<form action="updateScreen.jsp" enctype="UTF-8" method="get">
+<form action="lastnameCheck" enctype="UTF-8" method="get">
 <p><label>last <input type="text" name="last" value="" ></label></p>
 
 <p><input type="submit" value="update player" ></p>

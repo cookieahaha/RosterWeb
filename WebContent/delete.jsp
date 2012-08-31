@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form action="deleteConfirm.jsp" enctype="UTF-8" method="get">
+<form action="DeleteServlet" enctype="UTF-8" method="get">
 <p><label>last <input type="text" name="last" value="" ></label></p>
 
 <p><input type="submit" value="delete player" ></p>
