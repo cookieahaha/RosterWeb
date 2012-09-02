@@ -25,8 +25,12 @@ public class Roster implements java.io.Serializable{
         map = new HashMap<String,Player>();
         Player test1 = new Player("yas", "kash", "000", "cent", 0.1, "jijiji", "ftghj school");
         addPlayer("kash", test1);
-        Player test2 = new Player("yasss", "kashhh", "000", "cent", 0.1, "jijiji", "ftghj school");
-        addPlayer("kashhh", test2);
+        Player test2 = new Player("jhgfd", "asdfg", "uytre", "cent", 0.4, "jitiji", "ftghj ool");
+        addPlayer("asdfg", test2);
+        Player test3 = new Player("ytre", "kashhh", "hgfd", "cent", 55, "jijiji", "ghj school");
+        addPlayer("kashhh", test3);
+        Player test4 = new Player("nbvcx", "iuytr", "000", "ryhrynbt", 2.1, "brgvefv", "tgj scool");
+        addPlayer("iuytr", test4);
     }
     
     public void addPlayer(String lastname, Player player){
