@@ -28,25 +28,30 @@ public class Control extends HttpServlet {
     public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
       String action = request.getParameter("action");
 
-      if((action.equals("list")) || (action == null) ){
+      if((action == null) || (action.equals("list")) ){
         ServletContext sc = getServletContext();
         RequestDispatcher rd = sc.getRequestDispatcher("/showAll.jsp");
         rd.forward(request, response);
       }
-      if(action.equals("read")){
+      else if(action.equals("read")){
         ServletContext sc = getServletContext();
         RequestDispatcher rd = sc.getRequestDispatcher("/add");
         rd.forward(request, response);
       }
-      if(action.equals("delete")){
+      else if(action.equals("delete")){
         ServletContext sc = getServletContext();
         RequestDispatcher rd = sc.getRequestDispatcher("/DeleteServlet");
         rd.forward(request, response);
       }
-      if(action.equals("update")){
+      else if(action.equals("update")){
         ServletContext sc = getServletContext();
         RequestDispatcher rd = sc.getRequestDispatcher("/lastnameCheck");
         rd.forward(request, response);
+      }
+      else{
+        ServletContext sc = getServletContext();
+        RequestDispatcher rd = sc.getRequestDispatcher("/cantFind.html");
+        rd.forward(request, response);        
       }
     }
 

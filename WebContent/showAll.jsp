@@ -16,7 +16,16 @@
 <% 
 Player[] all = Roster.getRoster().getAll(); %>
 
-<table>
+<table border="1" cellpadding="5" cellspacing="0">
+<tr>
+<td>First</td>
+<td>Last</td>
+<td>Number</td>
+<td>Positon</td>
+<td>BattingAverage</td>
+<td>HomeTown</td>
+<td>HighSchool</td>
+</tr>
 
 <%
 for(int i=0; i<all.length; i++){ %>
@@ -53,12 +62,6 @@ for(int i=0; i<all.length; i++){ %>
 
 <form action="read.jsp" enctype="UTF-8" method="get">
 <p><input type="submit" value="add" ></p>
-</form>
-<form action="delete.jsp" enctype="UTF-8" method="get">
-<p><input type="submit" value="delete" ></p>
-</form>
-<form action="update.jsp" enctype="UTF-8" method="get">
-<p><input type="submit" value="update" ></p>
 </form>
 
 </body>
