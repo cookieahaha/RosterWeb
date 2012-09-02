@@ -22,30 +22,34 @@ Player[] all = (Player[])request.getAttribute("array");
 
 <td>
 <form action="Control" enctype="UTF-8" method="get">
-<input type="submit" value="First" ></p>
+<input type="submit" value="First" >
 <input type="hidden" name="action" value="sort" >
 <input type="hidden" name="sortType" value="first" >
+</form>
 </td>
 
 <td>
 <form action="Control" enctype="UTF-8" method="get">
-<input type="submit" value="Last" ></p>
+<input type="submit" value="Last" >
 <input type="hidden" name="action" value="sort" >
 <input type="hidden" name="sortType" value="last" >
+</form>
 </td>
 
 <td>
 <form action="Control" enctype="UTF-8" method="get">
-<input type="submit" value="Number" ></p>
+<input type="submit" value="Number" >
 <input type="hidden" name="action" value="sort" >
 <input type="hidden" name="sortType" value="number" >
+</form>
 </td>
 
 <td>
 <form action="Control" enctype="UTF-8" method="get">
-<input type="submit" value="Position" ></p>
+<input type="submit" value="Position" >
 <input type="hidden" name="action" value="sort" >
 <input type="hidden" name="sortType" value="position" >
+</form>
 </td>
 
 <td>
@@ -53,6 +57,7 @@ Player[] all = (Player[])request.getAttribute("array");
 <input type="submit" value="BattingAverage" ></p>
 <input type="hidden" name="action" value="sort" >
 <input type="hidden" name="sortType" value="battingAverage" >
+</form>
 </td>
 
 <td>
@@ -60,6 +65,7 @@ Player[] all = (Player[])request.getAttribute("array");
 <input type="submit" value="HomeTown" ></p>
 <input type="hidden" name="action" value="sort" >
 <input type="hidden" name="sortType" value="homeTown" >
+</form>
 </td>
 
 <td>
@@ -67,6 +73,7 @@ Player[] all = (Player[])request.getAttribute("array");
 <input type="submit" value="HighSchool" ></p>
 <input type="hidden" name="action" value="sort" >
 <input type="hidden" name="sortType" value="highSchool" >
+</form>
 </td>
 
 </tr>

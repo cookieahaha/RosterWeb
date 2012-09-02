@@ -28,6 +28,7 @@ public class SortServlet extends HttpServlet {
     }
 
     public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+ 
       final String sortType = request.getParameter("sortType");
       
       Player[] all = Roster.getRoster().getAll();
