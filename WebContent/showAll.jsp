@@ -37,6 +37,14 @@ for(int i=0; i<all.length; i++){ %>
 </form> 
 </td>
 
+<td> 
+<form action="Control" enctype="UTF-8" method="get">
+<p><input type="submit" value="update" ></p>
+<p><input type="hidden" name="action" value="update"></p>
+<p><input type="hidden" name="last" value="<%=all[i].getLastName() %>"></p>
+</form> 
+</td>
+
 </tr>
 <% }
 %>
