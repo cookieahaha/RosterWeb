@@ -28,6 +28,11 @@ public class Control extends HttpServlet {
     public void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
       String action = request.getParameter("action");
 
+      if((action.equals("list")) || (action == null) ){
+        ServletContext sc = getServletContext();
+        RequestDispatcher rd = sc.getRequestDispatcher("/showAll.jsp");
+        rd.forward(request, response);
+      }
       if(action.equals("read")){
         ServletContext sc = getServletContext();
         RequestDispatcher rd = sc.getRequestDispatcher("/add");

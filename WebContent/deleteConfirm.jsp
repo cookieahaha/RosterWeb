@@ -19,8 +19,10 @@
 
 
 
-<form action="showAll.jsp" enctype="UTF-8" method="get">
+<form action="Control" enctype="UTF-8" method="get">
 <p><input type="submit" value="view roster" ></p>
+<p><input type="hidden" name="action" value="list"></p>
+
 </form>
 
 </body>
