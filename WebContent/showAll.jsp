@@ -28,6 +28,15 @@ for(int i=0; i<all.length; i++){ %>
 <td><%=  all[i].getBattingAverage()%></td>
 <td><%=  all[i].getHomeTown()%></td>
 <td><%=  all[i].getHighSchool()%></td>
+
+<td> 
+<form action="Control" enctype="UTF-8" method="get">
+<p><input type="submit" value="delete" ></p>
+<p><input type="hidden" name="action" value="delete"></p>
+<p><input type="hidden" name="last" value="<%=all[i].getLastName() %>"></p>
+</form> 
+</td>
+
 </tr>
 <% }
 %>
