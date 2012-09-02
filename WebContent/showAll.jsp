@@ -14,18 +14,25 @@
 </head>
 <body>
 <% 
-Player[] all = Roster.getRoster().getAll();
+Player[] all = Roster.getRoster().getAll(); %>
+
+<table>
+
+<%
 for(int i=0; i<all.length; i++){ %>
-<%=  all[i].getFirstName() %>
-<%=  all[i].getLastName() %>
-<%=  all[i].getNumber()%>
-<%=  all[i].getPosition()%>
-<%=  all[i].getBattingAverage()%>
-<%=  all[i].getHomeTown()%>
-<%=  all[i].getHighSchool()%>
-<br>
+<tr>
+<td><%=  all[i].getFirstName() %></td>
+<td><%=  all[i].getLastName() %></td>
+<td><%=  all[i].getNumber()%></td>
+<td><%=  all[i].getPosition()%></td>
+<td><%=  all[i].getBattingAverage()%></td>
+<td><%=  all[i].getHomeTown()%></td>
+<td><%=  all[i].getHighSchool()%></td>
+</tr>
 <% }
 %>
+
+</table>
 
 <form action="read.jsp" enctype="UTF-8" method="get">
 <p><input type="submit" value="add" ></p>
