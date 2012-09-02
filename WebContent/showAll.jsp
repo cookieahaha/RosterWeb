@@ -14,17 +14,61 @@
 </head>
 <body>
 <% 
-Player[] all = Roster.getRoster().getAll(); %>
+Player[] all = (Player[])request.getAttribute("array");
+%>
 
 <table border="1" cellpadding="5" cellspacing="0">
 <tr>
-<td>First</td>
-<td>Last</td>
-<td>Number</td>
-<td>Positon</td>
-<td>BattingAverage</td>
-<td>HomeTown</td>
-<td>HighSchool</td>
+
+<td>
+<form action="Control" enctype="UTF-8" method="get">
+<input type="submit" value="First" ></p>
+<input type="hidden" name="action" value="sort" >
+<input type="hidden" name="sortType" value="first" >
+</td>
+
+<td>
+<form action="Control" enctype="UTF-8" method="get">
+<input type="submit" value="Last" ></p>
+<input type="hidden" name="action" value="sort" >
+<input type="hidden" name="sortType" value="last" >
+</td>
+
+<td>
+<form action="Control" enctype="UTF-8" method="get">
+<input type="submit" value="Number" ></p>
+<input type="hidden" name="action" value="sort" >
+<input type="hidden" name="sortType" value="number" >
+</td>
+
+<td>
+<form action="Control" enctype="UTF-8" method="get">
+<input type="submit" value="Position" ></p>
+<input type="hidden" name="action" value="sort" >
+<input type="hidden" name="sortType" value="position" >
+</td>
+
+<td>
+<form action="Control" enctype="UTF-8" method="get">
+<input type="submit" value="BattingAverage" ></p>
+<input type="hidden" name="action" value="sort" >
+<input type="hidden" name="sortType" value="battingAverage" >
+</td>
+
+<td>
+<form action="Control" enctype="UTF-8" method="get">
+<input type="submit" value="HomeTown" ></p>
+<input type="hidden" name="action" value="sort" >
+<input type="hidden" name="sortType" value="homeTown" >
+</td>
+
+<td>
+<form action="Control" enctype="UTF-8" method="get">
+<input type="submit" value="HighSchool" ></p>
+<input type="hidden" name="action" value="sort" >
+<input type="hidden" name="sortType" value="highSchool" >
+</td>
+
 </tr>
 
 <%

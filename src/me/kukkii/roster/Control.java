@@ -29,6 +29,9 @@ public class Control extends HttpServlet {
       String action = request.getParameter("action");
 
       if((action == null) || (action.equals("list")) ){
+        Player[] all = Roster.getRoster().getAll();
+        request.setAttribute("array", all);
+        
         ServletContext sc = getServletContext();
         RequestDispatcher rd = sc.getRequestDispatcher("/showAll.jsp");
         rd.forward(request, response);
@@ -46,6 +49,11 @@ public class Control extends HttpServlet {
       else if(action.equals("update")){
         ServletContext sc = getServletContext();
         RequestDispatcher rd = sc.getRequestDispatcher("/lastnameCheck");
+        rd.forward(request, response);
+      }
+      else if(action.equals("sort")){
+        ServletContext sc = getServletContext();
+        RequestDispatcher rd = sc.getRequestDispatcher("/SortServlet");
         rd.forward(request, response);
       }
       else{
